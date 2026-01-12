@@ -2,7 +2,7 @@
     --bg: #000000;
     --text-primary: #ffffff;
     --text-secondary: #333333;
-    --accent: #007AFF;
+    --accent: #00FF00;
     --easing: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -72,6 +72,7 @@ a {
     color: var(--accent);
     transform: scale(1.1);
     text-shadow: 0 0 40px rgba(0, 122, 255, 0.8);
+    cursor: default !important;
 }
 
 .studio-text {
@@ -98,6 +99,12 @@ a {
 
 .success {
     color: var(--text-primary);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login {
+    color: var(--accent);
     font-weight: bold;
     margin-top: 10px;
 }
