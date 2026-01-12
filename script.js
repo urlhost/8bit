@@ -19,19 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         bit.addEventListener('mouseenter', () => {
             bit.style.opacity = "1";
             bit.style.transform = "scale(1.2)";
-            bit.style.color = "#007AFF";
         });
 
         bit.addEventListener('mouseleave', () => {
             bit.style.opacity = "0.3";
             bit.style.transform = "scale(1)";
-            bit.style.color = "white";
+            bit.style.color = '';
         });
     });
 
     const runTerminal = () => {
         if (successLine) successLine.style.opacity = "0";
-
+        if (loginLine) loginLine.style.opacity = "0";
+        
         terminalLines.forEach((line, index) => {
             line.style.opacity = "0";
             line.style.transform = "translateX(-10px)";
