@@ -1,18 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const bits = document.querySelectorAll('.bit');
     const terminalLines = document.querySelectorAll('.typing');
     const successLine = document.querySelector('.success');
-
-    const initializeLogo = () => {
-        bits.forEach((bit, index) => {
-            bit.style.opacity = "0";
-            bit.style.transform = "translateY(10px)";
-            setTimeout(() => {
-                bit.style.opacity = "0.3";
-                bit.style.transform = "translateY(0)";
-            }, 100 * index);
-        });
-    };
 
     const runTerminal = () => {
         if (successLine) successLine.style.opacity = "0";        
